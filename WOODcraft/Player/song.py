@@ -19,7 +19,7 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 
-from RaiChu.config import BOT_USERNAME as bn, SUDO_USERS
+from WOODcraft.config import BOT_USERNAME as bn, SUDO_USERS
 from Process.decorators import humanbytes
 from Process.filters import command, other_filters
 
