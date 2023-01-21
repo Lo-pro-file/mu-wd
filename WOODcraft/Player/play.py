@@ -9,12 +9,12 @@ import youtube_dl
 import youtube_dl
 import aiofiles
 import aiohttp
-from RaiChu.converter import convert
+from WOODcraft.converter import convert
 import ffmpeg
 import requests
 from Process.fonts import CHAT_TITLE
 from PIL import Image, ImageDraw, ImageFont
-from RaiChu.config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5
+from WOODcraft.config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5
 from Process.filters import command, other_filters
 from Process.queues import QUEUE, add_to_queue
 from Process.main import call_py, aman as user
@@ -27,7 +27,7 @@ from pytgcalls.types.input_stream.quality import MediumQualityVideo
 from pytgcalls.types.input_stream import AudioImagePiped, AudioVideoPiped
 from youtubesearchpython import VideosSearch
 from Process.design.thumbnail import play_thumb, queue_thumb
-from RaiChu.inline import stream_markup, audio_markup
+from WOODcraft.inline import stream_markup, audio_markup
 
 def ytsearch(query):
     try:
