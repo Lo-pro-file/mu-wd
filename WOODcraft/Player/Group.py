@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from RaiChu.config import (
+from WOODcraft.config import (
     ASSISTANT_NAME,
     BOT_NAME,
     BOT_USERNAME,
@@ -38,7 +38,7 @@ async def _human_time_duration(seconds):
 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from RaiChu.config import (
+from WOODcraft.config import (
     ASSISTANT_NAME,
     BOT_NAME,
     BOT_USERNAME,
@@ -80,7 +80,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 🅡🅐🅘🅒🅗🅤  🅑🅞🅣  🅢🅣🅐🅣🅢:\n"
+        "🤖 𝐖𝐃  𝐙𝐎𝐍𝐄:\n"
         f"➤ **ᴜᴘᴛɪᴍᴇ:** `{uptime}`\n"
         f"➤ **sᴛᴀʀᴛ ᴛɪᴍᴇ:** `{START_TIME_ISO}`"
     )
