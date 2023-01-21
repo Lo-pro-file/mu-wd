@@ -1,13 +1,13 @@
 from pyrogram import Client
-from RaiChu.config import API_ID, API_HASH, BOT_TOKEN, SESSION_NAME
+from WOODcraft.config import API_ID, API_HASH, BOT_TOKEN, SESSION_NAME
 from pytgcalls import PyTgCalls, idle
 
 bot = Client(
-    "RaiChu",
+    "WOODcraft",
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="RaiChu.Player"),
+    plugins=dict(root="WOODcraft.Player"),
     )
 
 aman = Client(
@@ -23,7 +23,7 @@ user = PyTgCalls(aman,
 
 call_py = PyTgCalls(aman, overload_quiet_mode=True)
 
-with Client("RaiChu", API_ID, API_HASH, bot_token=BOT_TOKEN) as app:
+with Client("WOODcraft", API_ID, API_HASH, bot_token=BOT_TOKEN) as app:
     me_bot = app.get_me()
 with aman as app:
     me_aman = app.get_me()
