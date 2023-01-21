@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from RaiChu.config import (
+from WOODcraft.config import (
     ASSISTANT_NAME,
     BOT_NAME,
     BOT_USERNAME,
@@ -82,7 +82,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " ʀᴇᴘᴏ ⚒️", url=f"https://github.com/AMANTYA1/RaiChu-MusicV2")
+                        " ʀᴇᴘᴏ ⚒️", url=f"https://github.com/angel-loveyou/mu-wdv2")
                 ]
             ]
         ),
