@@ -46,9 +46,7 @@ def ytsearch(query):
 
 async def ytdl(format: str, link: str):
     stdout, stderr = await bash(f'yt-dlp --geo-bypass -g -f "[height<=?720][width<=?1280]" {link}')
-    if stdout:
-        return 1, stdout.split("\n")[0]
-    return 0, stderr
+    return (1, stdout.split("\n")[0]) if stdout else (0, stderr)
 
 chat_id = None
 DISABLED_GROUPS = []

@@ -32,7 +32,7 @@ async def _human_time_duration(seconds):
     for unit, div in TIME_DURATION_UNITS:
         amount, seconds = divmod(int(seconds), div)
         if amount > 0:
-            parts.append("{} {}{}".format(amount, unit, "" if amount == 1 else "s"))
+            parts.append(f'{amount} {unit}{"" if amount == 1 else "s"}')
     return ", ".join(parts)
 
 
@@ -76,13 +76,15 @@ Feel free to add me to your groups.
 @Client.on_message(command(["repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/f01f58c3d9b187ae1d8a1.jpg",
-        caption=f"""Here Is The Source Code Fork And Give Stars ✨""",
+        photo="https://telegra.ph/file/f01f58c3d9b187ae1d8a1.jpg",
+        caption="""Here Is The Source Code Fork And Give Stars ✨""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " ʀᴇᴘᴏ ⚒️", url=f"https://github.com/angel-loveyou/mu-wdv2")
+                        " ʀᴇᴘᴏ ⚒️",
+                        url="https://github.com/angel-loveyou/mu-wdv2",
+                    )
                 ]
             ]
         ),
